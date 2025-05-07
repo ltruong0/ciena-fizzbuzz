@@ -11,11 +11,14 @@ def fizz_buzz(input_number, a, b):
             print('buzz')
         elif x % b == 0:
             print('fizz')
-        else:
-            print(x)
+    else:
+        print(x)
 
-if __name__ == "__main__":
+    return True
 
+def test_fizzbuzz():
+    assert fizz_buzz(100, 5, 3) == True
+
+if __name__ == '__main__':
     input_number = int(sys.argv[1])
-
     fizz_buzz(input_number, 5, 3)
