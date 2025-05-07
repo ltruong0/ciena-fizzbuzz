@@ -1,7 +1,6 @@
 
 import sys
 
-
 def fizz_buzz(input_number, a, b):
     print(f'number input {input_number}')
     for x in range(1,input_number +  1):
@@ -18,7 +17,7 @@ def fizz_buzz(input_number, a, b):
     return True
 
 def test_fizzbuzz():
-    assert fizzbuzz(100) == True
+    assert fizz_buzz(100, 5, 3) == True
 
 if __name__ == '__main__':
     input_number = int(sys.argv[1])
